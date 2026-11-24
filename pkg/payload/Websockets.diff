@@ -1,0 +1,20 @@
+--- a/Websockets.js
++++ b/Websockets.js
+@@ -810,7 +810,7 @@ Websockets.prototype._isTransition = function( jsonStr )
+     }
+ }
+ 
+-function _isStack( jsonStr1, jsonStr2 )
++Websockets.prototype._isStack = function( jsonStr1, jsonStr2 ) // cmu-re: was a bare function called as this._isStack (TypeError every call)
+ {
+     var ret = "false";
+     
+@@ -837,7 +837,7 @@ function _isStack( jsonStr1, jsonStr2 )
+     }
+ }
+ 
+-function _delStack( jsonStr1, jsonStr2 )
++Websockets.prototype._delStack = function( jsonStr1, jsonStr2 ) // cmu-re: was a bare function called as this._delStack (TypeError every call)
+ {
+ 
+    for (index = 0; index < this._waitMsgArray.length; index++)
