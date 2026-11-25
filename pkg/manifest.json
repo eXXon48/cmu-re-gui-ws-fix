@@ -14,7 +14,7 @@
     {
       "live": "/jci/gui/framework/js/Websockets.js",
       "payload": "payload/Websockets.diff",
-      "mode": "0755",
+      "mode": "0775",
       "owner": "1000:1000",
       "type": "modify",
       "apply": "3way",
